@@ -4,29 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="a web and mobile app design studio landing page" />
+    <title>Smax Test</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="scripts.js"></script>
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <h1 id="logo"><a href="/">logo</a></h1>
+        <nav id="nav" class="close">
+            <ul>
+                <li class="nav-item"><a href="#hero">About us</a></li>
+                <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="#booking-contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="btn-menu">
+            <button role="button" aria-label="bars" id="bars-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button role="button" aria-label="close" id="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
     </header>
     <main>
-        <section id="hero">
-            <div>
+        <section id="hero" class="bg-beige flex">
+            <div id="hero-about" class="flex">
+                <p>ABOUT US</p>
                 <h1>Design Studio</h1>
-                <p>Image from <a href="" target="_blank">Freepik</a>></a></p>
-                <button>CONTACT US</button>
+                <p class="credit">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></a></p>
+                <button role="button" aria-label="contact" class="btn-black">CONTACT US</button>
             </div>
-            <div></div>
+            <div id="hero-img">
+                <img src="assets/mockup-hero.png" alt="hero mockup" />
+            </div>
         </section>
-        <section>
+        <section id="services" class="bg-black">
             <h1>What We Do</h1>
             <ul>
                 <li>
                     <h2>Strategy</h2>
-                    <ul>
+                    <ul class="services-list">
                         <li>
                             <a href="#">Analytics and Research</a>
                         </li>
@@ -49,7 +70,7 @@
                 </li>
                 <li>
                     <h2>Design</h2>
-                    <ul>
+                    <ul class="services-list">
                         <li><a href="#">Creative Direction</a></li>
                         <li><a href="#">Brand Guides</a></li>
                         <li><a href="#">Prototyes</a></li>
@@ -60,7 +81,7 @@
                 </li>
                 <li>
                     <h2>Branding</h2>
-                    <ul>
+                    <ul class="services-list">
                         <li><a href="#">Visual identity and Verbal identity</a></li>
                         <li><a href="#">Motion identity</a></li>
                         <li><a href="#">Sonic identity</a></li>
@@ -71,146 +92,169 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="intro" class="bg-beige">
             <h1>We create and improve <span>web & mobile products</span></h1>
-            <p>Image from <a href="" target="_blank">Freepik</a></p>
-            <div></div>
+            <p class="credit text-center">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+            <div>
+                <img src="./assets/mockup-webdesign.png" alt="web design mockup" />
+            </div>
         </section>
-        <section>
+        <section id="values" class="bg-black">
             <h1>We are a creative studio & production company</h1>
             <p>These core values define who we are and the work we do.</p>
             <div>
-                <div>
+                <div class="values-details">
                     <h2>We&apos;re crafting emotional experiences</h2>
                     <p>
                         Dictum fusce ut placerat orci nulla pellentesque dignissim. Amet luctus venenatis lectus magna
                         fringilla urna porttitor rhoncus dolor. Duis at consectetur lorem donec massa sapien faucibus.
                         Orci sagittis eu volutpat odio facilisis mauris sit.
                     </p>
-                    <button></button>
+                    <button role="button" aria-label="arrow right" class="btn-icon">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
-                <div>
+                <div class="values-details">
                     <h2>By using the latest developments in technology</h2>
                     <p>
                         Dictum fusce ut placerat orci nulla pellentesque dignissim. Amet luctus venenatis lectus magna
                         fringilla urna porttitor rhoncus dolor. Duis at consectetur lorem donec massa sapien faucibus.
                         Orci sagittis eu volutpat odio facilisis mauris sit.
                     </p>
-                    <button></button>
+                    <button role="button" aria-label="arrow right" class="btn-icon">
+                       <i class="fa-solid fa-arrow-right-long"></i> 
+                    </button>
                 </div>
-                <div>
+                <div class="values-details">
                     <h2>From branding to strategy, illustration to animation</h2>
                     <p>
                         Dictum fusce ut placerat orci nulla pellentesque dignissim. Amet luctus venenatis lectus magna
                         fringilla urna porttitor rhoncus dolor. Duis at consectetur lorem donec massa sapien faucibus.
                         Orci sagittis eu volutpat odio facilisis mauris sit.
                     </p>
-                    <button></button>
+                    <button role="button" aria-label="arrow right" class="btn-icon">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
-                <div>
+                <div class="values-details">
                     <h2>Design is more of a conversion than a monologue</h2>
                     <p>
                         Dictum fusce ut placerat orci nulla pellentesque dignissim. Amet luctus venenatis lectus magna
                         fringilla urna porttitor rhoncus dolor. Duis at consectetur lorem donec massa sapien faucibus.
                         Orci sagittis eu volutpat odio facilisis mauris sit.
                     </p>
-                    <button></button>
+                    <button role="button" aria-label="arrow right" class="btn-icon">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section id="show" class="bg-beige">
+            <div id="clients">
                 <h1>What clients say</h1>
                 <div>
-                    <div>
+                    <div class="clients-card">
+                        <i class="fa-solid fa-quote-left"></i>
                         <p>Sample text. Click to select the text box. Click again or double click to start editing the
                             text.</p>
-                        <div>
-                            <div></div>
+                        <div class="clients-card_info">
+                            <div class="profile">
+                                <img src="./assets/client-1.jpg" alt="client 1 mockup" />
+                            </div>
                             <p>Saha Grey</p>
                             <p>BUSSINESS OWNER</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="clients-card">
+                        <i class="fa-solid fa-quote-left"></i>
                         <p>Sample text. Click to select the text box. Click again or double click to start editing the
                             text.</p>
-                        <div>
-                            <div></div>
+                        <div class="clients-card_info">
+                            <div class="profile">
+                                <img src="./assets/client-2.png" alt="client 2 mockup" />
+                            </div>
                             <p>Nat Reynolds</p>
                             <p>CHIEF ACCOUNTANT</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="clients-card">
+                        <i class="fa-solid fa-quote-left"></i>
                         <p>Sample text. Click to select the text box. Click again or double click to start editing the
                             text.</p>
-                        <div>
-                            <div></div>
+                        <div class="clients-card_info">
+                            <div class="profile">
+                                <img src="./assets/client-3.jpg" alt="client 3 mockup" />
+                            </div>
                             <p>Bob Roberts</p>
                             <p>SALES MANAGER</p>
                         </div>
                     </div>
-                    <p>Image from <a href="" target="_blank">Freepik</a></p>
                 </div>
+                <p class="credit text-center">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
             </div>
-            <div>
+            <div id="portfolio">
                 <h1>Portfolio</h1>
                 <div>
                     <div>
-                        <div>
-                            <p>MOBILE APP</p>
-                            <p>Happy Day App</p>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
+                                <p>MOBILE APP</p>
+                                <p>Happy Day App</p>
+                            </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
                                 <p>MOBILE APP</p>
                                 <p>Mountain App</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
                                 <p>WEB DESIGN</p>
                                 <p>Recipes site</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
                                 <p>STORE</p>
                                 <p>Fashion Store</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
                                 <p>WEB DESIGN</p>
                                 <p>Interior Studio</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-card_label">
                                 <p>WEB DESIGN</p>
                                 <p>Personal website</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>Image from <a href="" target="_blank">Freepik</a></p>
+                <p class="credit text-center">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div>
+        <section id="work-with-us" class="bg-black">
+            <div id="work-with-us_img">
+                <img src="./assets/man-side.jpg" alt="man sideview mockup" />
+            </div>
+            <div id="work-with-us_contact">
                 <h1>Wanna work with us?</h1>
                 <p>Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex.
                     Suspendisse rhoncus laoreet purus quis elementum.</p>
-                <div>
-                    <button>VIEW PORTFOLIO</button>
-                    <button>CONTACT US</button>
+                <div id="btn-group">
+                    <button role="button" aria-label="view portfolio">VIEW PORTFOLIO</button>
+                    <button role="button" aria-label="contact us">CONTACT US</button>
                 </div>
-                <p>Image from <a href="" target="_blank">Freepik</a></p>
+                <p class="credit italic">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
             </div>
         </section>
-        <section>
-            <div>
-                <div>
+        <section id="contact" class="bg-beige">
+            <div id="emotion">
+                <div id="emotion-left">
                     <h1>We shape emotions</h1>
                     <ul>
                         <li>
@@ -224,41 +268,51 @@
                                 commodo consequat.</p>
                         </li>
                         <li>
-                            <h2>01. We create winning realities</h2>
+                            <h2>03. We create winning realities</h2>
                             <p>Ut enum ad minim veniam, quis nostrud exercitation ullamco labouris nisi ut aliquip ex ea
                                 commodo consequat.</p>
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div id="emotion-right">
                     <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <img src="./assets/mockup-deer.jpg" alt="deer mockup" />
+                        </div>
+                        <div>
+                            <img src="./assets/mockup-banner.jpg" alt="banner mockup" />
+                        </div>
+                        <div>
+                            <img src="./assets/mockup-shirt.jpg" alt="shirt mockup" />
+                        </div>
+                        <div>
+                            <img src="./assets/mockup-coffee.jpg" alt="coffee signs mockup" />
+                        </div>
                     </div>
-                    <p>Image from <a href="" target="_blank">Freepik</a></p>
+                    <p class="credit">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
                 </div>
             </div>
-            <div>
-                <div></div>
-                <div>
+            <div id="booking">
+                <div id="booking-img">
+                    <img src="./assets/mockup-contact.png" alt="woman holding phone mockup" />
+                </div>
+                <div id="booking-contact">
                     <h1>Contact us</h1>
                     <ul>
-                        <li><span>PHONE:</span>(555)123-4567</li>
-                        <li><span>E-MAIL:</span>INFO@SAMPLE.COM</li>
-                        <li><span>ADDRESS:</span>ALEXANDRIA, 32 WASHINGORN STR, 22303</li>
-                        <li><span>OPENING HOURS:</span> MONDAY - THURSDAY 10:00 - 23:00 FRIDAY - SUNDAY 10:00 - 19:00
+                        <li><span>PHONE:</span> (555)123-4567</li>
+                        <li><span>E-MAIL:</span> INFO@SAMPLE.COM</li>
+                        <li><span>ADDRESS:</span><br/>ALEXANDRIA, 32 WASHINGORN STR, 22303</li>
+                        <li><span>OPENING HOURS:</span><br/>MONDAY &mdash; THURSDAY 10:00 - 23:00<br/>FRIDAY &mdash; SUNDAY 10:00 - 19:00
                         </li>
                     </ul>
-                    <p>Image from <a href="" target="_blank">Freepik</a></p>
-                    <button>BOOK CONSULTATION</button>
+                    <p class="credit">Image from <a href="https://www.freepik.com/" target="_blank">Freepik</a></p>
+                    <button role="button" aria-label="book consultation" class="btn-black">BOOK CONSULTATION</button>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Sample text. Click to select the Text Element.</p>
+        <p class="text-center">Sample text. Click to select the Text Element.</p>
     </footer>
 </body>
 
